@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgapps"
+    tools:context=".Attendance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark Attendance"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/stuname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashboard"
+                android:layout_marginTop="6dp"
+                android:text="Null"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@mipmap/applogo" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/choosedata"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:text="Choose Date "
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.494">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/mark_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/present_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:text="Present class"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:text="Cancel class"
+            android:textAllCaps="false"
+            android:textColor="@color/white">
+
+        </Button>
+
+        <Button
+            android:id="@+id/absent_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:text="Absent class"
+            android:textAllCaps="false"
+            android:textColor="@color/white">
+
+        </Button>
+
+        <Button
+            android:id="@+id/take_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:text="Take Leave"
+            android:textAllCaps="false"
+            android:textColor="@color/white">
+
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

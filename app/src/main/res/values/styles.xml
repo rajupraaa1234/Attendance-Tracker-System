@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/bcblue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="splash_activity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/applogo2</item>
+    </style>
+
+    <style name="exampleToast">
+        <item name="colorBackground">#DF94FFAB</item>
+        <item name="textColor">#FA090808</item>
+        <item name="strokeColor">#69F0AE</item>
+        <item name="strokeWidth">30dp</item>
+        <item name="length">LONG</item>
+        <item name="cornerRadius">3dp</item>
+    </style>
+</resources>

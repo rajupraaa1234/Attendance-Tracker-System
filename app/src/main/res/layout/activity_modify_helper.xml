@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raju.attendencetracker.Modify_helper"
+    android:background="@mipmap/bgapps"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modify Attendance"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/stuname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Null"
+                android:layout_below="@+id/dashboard"
+                android:textSize="20sp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                />
+            <ImageView
+                app:srcCompat="@mipmap/applogo"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/modify_date"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/custtom_btn"
+            android:text="Choose Date "
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.494"
+            >
+        </Button>
+        <Spinner
+            android:id="@+id/modify_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/modify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Modify"
+            android:textColor="@color/white"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+        </Button>
+        <TextView
+            android:id="@+id/hidesubject"
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintHorizontal_bias="0.498"
+            />
+
+        <TextView
+            android:id="@+id/hide_mark"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <Button
+            android:id="@+id/edit_hide"
+            android:layout_width="74dp"
+            android:layout_height="33dp"
+            android:background="@drawable/custtom_btn"
+            android:text="Edit"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:layout_marginLeft="25dp"
+            />
+
+        <Button
+            android:id="@+id/present_hide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/custtom_btn"
+            android:text="present class"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/absent_hide"
+            android:layout_width="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custtom_btn"
+            android:textAllCaps="false"
+            android:text="Absent class"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/cancel_hide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/custtom_btn"
+            android:text="cancel class"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/take_hide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/custtom_btn"
+            android:text="Take Leave"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="25dp"
+            android:visibility="invisible"
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

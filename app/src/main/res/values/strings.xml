@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AttendenceTracker</string>
+    <string-array name="type">
+        <item>Sport Leave</item>
+        <item>Duty Leave</item>
+        <item>Medical Leave</item>
+    </string-array>
+</resources>

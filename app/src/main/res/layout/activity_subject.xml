@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgapps"
+    tools:context=".Subject">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enroll subject"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/stuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Null"
+            android:layout_below="@+id/dashboard"
+            android:textSize="20sp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/applogo" />
+    </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_marginTop="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Subject name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/hour"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Total Hour Expected"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/add_subject_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custtom_btn"
+            android:text="Add Subject"
+            android:layout_marginRight="10dp"
+
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/removesubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custtom_btn"
+            android:textAllCaps="false"
+            android:text="Remove Subject"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/custtom_btn"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+</ScrollView>

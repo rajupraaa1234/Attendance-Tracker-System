@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgapps"
+    tools:context=".view_att_helper">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Attendance"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/stuname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Null"
+                android:layout_below="@+id/dashboard"
+                android:textSize="20sp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/applogo"/>
+        </RelativeLayout>
+
+
+
+        <Spinner
+            android:id="@+id/view_select1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custtom_btn"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/white"
+             />
+
+        <Button
+            android:id="@+id/view_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custtom_btn"
+            android:text="check"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/lecture_conduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/lecture_attend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/taken_leave"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lecture_missed"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lecture_canceled"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/totalhour"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</ScrollView>
