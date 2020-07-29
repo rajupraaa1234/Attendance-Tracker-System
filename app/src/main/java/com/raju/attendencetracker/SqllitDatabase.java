@@ -229,7 +229,7 @@ public class SqllitDatabase extends SQLiteOpenHelper {
             contentValues.put(att_Col_6, 1);
             contentValues.put(att_Col_4, 0);
             contentValues.put(att_Col_5, 0);
-        } else if (type.equals("cencel")) {
+        } else if (type.equals("cancel")) {
             contentValues.put(att_Col_5, 1);
             contentValues.put(att_Col_6, 0);
             contentValues.put(att_Col_3, 0);
